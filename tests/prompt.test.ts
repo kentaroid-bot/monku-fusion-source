@@ -7,10 +7,10 @@ import { MONKU_AI_CONSTITUTION } from "../shared/monku-constitution";
 describe("adopted Monku Fusion prompt", () => {
   it("ships the complete adopted document without editorial drift", () => {
     const document = readFileSync(
-      new URL("../docs/prompts/monku-fusion-engine-2026-09-26.md", import.meta.url),
+      new URL("../docs/prompts/monku-fusion-engine-2026-09-28.md", import.meta.url),
       "utf8",
-    );
-    const suffix = "# INPUT\n\n{{text}}\n";
+    ).trimEnd();
+    const suffix = "# INPUT\n\n{{text}}";
     expect(document.endsWith(suffix)).toBe(true);
     expect(FUSION_INSTRUCTIONS).toBe(document.slice(0, -suffix.length).trimEnd());
   });

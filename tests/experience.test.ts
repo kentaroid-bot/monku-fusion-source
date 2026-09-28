@@ -100,11 +100,12 @@ describe("four response perspectives and revision data", () => {
       const mode = modeInstructions[generationModes[i]];
       const modeBlock = `# 今回の回答モード\n\n${mode}\n\n`;
       expect(prompt.split(mode)).toHaveLength(2);
-      expect(prompt.indexOf("## あなたの役割と目的")).toBeLessThan(
+      expect(prompt.indexOf("## 制作動機")).toBeGreaterThan(-1);
+      expect(prompt.indexOf("## 制作動機")).toBeLessThan(
         prompt.indexOf(mode),
       );
       expect(prompt.indexOf(mode)).toBeLessThan(
-        prompt.indexOf("# 思考・適応のレイヤー"),
+        prompt.indexOf("## あなたの役割"),
       );
       expect(prompt.replace(modeBlock, "").startsWith(FUSION_INSTRUCTIONS)).toBe(
         true,

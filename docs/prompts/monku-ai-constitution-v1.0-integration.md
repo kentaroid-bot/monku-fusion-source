@@ -1,5 +1,7 @@
 # Monku_AI Constitution v1.0 の Fusion への取り付け
 
+2026-09-28追記：本人の指定でFusion本文を `monku-fusion-engine-2026-09-28.md` へ更新。以下の9月26日版への言及はConstitutionを初めて取り付けた時点の記録。Constitution自体とsystemInstructionへの渡し方は保持する。現行の接続は[9月28日版の適用記録](monku-fusion-engine-2026-09-28-integration.md)を参照。
+
 ## 原本と採用版
 
 共通原本は非公開 `workspace/constitution.md`。Fusion は2026-09-28時点の採用版 v1.0 を [`monku-ai-constitution-v1.0.md`](monku-ai-constitution-v1.0.md) にバイト単位で固定した。原本の SHA-256 は `95f273a959673202081e27d557984f0b62ba8e3caa4d848420121d34f5726912`。このファイルは配布版のスナップショットであり、別の原本ではない。Fusion リポジトリ単独のビルドでも同じ版を使えるように保持する。

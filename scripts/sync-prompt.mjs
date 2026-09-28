@@ -1,14 +1,14 @@
 import { readFile, writeFile } from "node:fs/promises";
 
-const source = new URL("../docs/prompts/monku-fusion-engine-2026-09-26.md", import.meta.url);
+const source = new URL("../docs/prompts/monku-fusion-engine-2026-09-28.md", import.meta.url);
 const target = new URL("../shared/fusion-prompt.ts", import.meta.url);
 const constitutionSource = new URL("../docs/prompts/monku-ai-constitution-v1.0.md", import.meta.url);
 const constitutionTarget = new URL("../shared/monku-constitution.ts", import.meta.url);
 const escapeTemplateLiteral = (value) =>
   value.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$\{/g, "\\${");
 
-const document = await readFile(source, "utf8");
-const suffix = "# INPUT\n\n{{text}}\n";
+const document = (await readFile(source, "utf8")).trimEnd();
+const suffix = "# INPUT\n\n{{text}}";
 if (!document.endsWith(suffix) || document.split("{{text}}").length !== 2) {
   throw new Error("Expected exactly one trailing INPUT placeholder");
 }

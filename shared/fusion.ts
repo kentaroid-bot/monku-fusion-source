@@ -138,8 +138,8 @@ export function buildPrompt(
   const options = validateOptions(inputOptions);
   if (!options)
     return `${FUSION_INSTRUCTIONS}\n\n# INPUT\n\n入力データ: ${JSON.stringify(text)}`;
-  // Establish the selected perspective before the shared transformation steps.
-  const modeAnchor = "# 思考・適応のレイヤー";
+  // Establish the selected perspective before the role and seven field definitions.
+  const modeAnchor = "## あなたの役割";
   const instructions = FUSION_INSTRUCTIONS.replace(
     modeAnchor,
     `# 今回の回答モード\n\n${modeInstructions[options.mode]}\n\n${modeAnchor}`,

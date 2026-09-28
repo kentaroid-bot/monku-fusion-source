@@ -42,8 +42,8 @@ Web・Convex・Chrome拡張は別々に配布されます。このリポジト�
 ## プロンプトを読む
 
 1. [Monku_AI Constitution v1.0](docs/prompts/monku-ai-constitution-v1.0.md)：共通の姿勢。Geminiの `systemInstruction` に渡します。
-2. [Monku Fusion Engine](docs/prompts/monku-fusion-engine-2026-09-26.md)：Fusionの制作動機・役割・変換の手順・回答形式。
-3. [4モードの指示と組み立て](shared/fusion.ts)：モードの指示を、Engineの「思考・適応のレイヤー」の直前へ入れます。
+2. [Monku Fusion Engine](docs/prompts/monku-fusion-engine-2026-09-28.md)：Fusionの制作動機・役割・7項目の定義・制約。
+3. [4モードの指示と組み立て](shared/fusion.ts)：モードの指示を、Engineの制作動機の後、「あなたの役割」の直前へ入れます。
 
 原稿と生成済み定数の対応は `npm run prompt:sync` と [プロンプトのテスト](tests/prompt.test.ts)で確認できます。[Constitutionの取り付け方](docs/prompts/monku-ai-constitution-v1.0-integration.md)も参照してください。プロンプトは秘密として扱わず、キーや個人情報を含めません。
 
