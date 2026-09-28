@@ -1,0 +1,7 @@
+{
+  "description": {
+    "message": "Turn friction into words and ideas. Four response modes, with ideas and balance shared with the web app."
+  },
+  "actionTitle": { "message": "Open Monku Fusion" },
+  "contextMenu": { "message": "Create with Monku Fusion" }
+}

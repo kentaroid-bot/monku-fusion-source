@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  svg {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 黄金グラデーション -->
+    <linearGradient id="goldGrad" x1="64" y1="20" x2="64" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <!-- エメラルドグラデーション -->
+    <linearGradient id="emeraldGrad" x1="20" y1="50" x2="108" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- 視認性向上のためのドロップシャドウフィルター -->
+    <filter id="crispShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 全体をまとめるグループ（シャドウ付き） -->
+  <g filter="url(#crispShadow)">
+    <!-- 1. 外側の黄金リング (Aperture / 開口部) -->
+    <circle cx="64" cy="64" r="56" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round" stroke-dasharray="280 40" />
+
+    <!-- 2. 左右の外側花びら (エメラルド) -->
+    <!-- 左花びら -->
+    <path d="M64 96 C30 92 14 62 24 44 C34 52 50 68 64 96 Z" fill="url(#emeraldGrad)" stroke="#064E3B" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- 右花びら -->
+    <path d="M64 96 C98 92 114 62 104 44 C94 52 78 68 64 96 Z" fill="url(#emeraldGrad)" stroke="#064E3B" stroke-width="2.5" stroke-linejoin="round" />
+
+    <!-- 3. 内側の左右花びら (淡い黄金) -->
+    <path d="M64 96 C42 85 34 56 46 36 C56 50 62 70 64 96 Z" fill="#FDE047" stroke="#B45309" stroke-width="2" />
+    <path d="M64 96 C86 85 94 56 82 36 C72 50 66 70 64 96 Z" fill="#FDE047" stroke="#B45309" stroke-width="2" />
+
+    <!-- 4. 中央の主花びら (力強い黄金の光) -->
+    <path d="M64 16 C50 40 48 76 64 98 C80 76 78 40 64 16 Z" fill="url(#goldGrad)" stroke="#92400E" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- 5. 中心の核 (白い稲妻スパーク ⚡) -->
+    <path d="M65 48 L59 66 L65 66 L63 80 L71 62 L65 62 Z" fill="#FFFFFF" filter="drop-shadow(0 0 4px #FBBF24)" />
+  </g>
+</svg>
+</body>
+</html>

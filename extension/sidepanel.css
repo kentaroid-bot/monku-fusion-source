@@ -1,0 +1,112 @@
+/* Shared Web styles are compiled before these side-panel adjustments. */
+.extension-ui {
+  min-width: 280px;
+  max-width: 700px;
+  padding: 18px 16px 32px;
+}
+.extension-ui .site-header {
+  gap: 12px;
+  padding-bottom: 12px;
+}
+.extension-ui .site-header nav {
+  order: 3;
+  flex-basis: 100%;
+  margin: 4px 0 0;
+}
+.extension-ui .site-header nav button {
+  flex: 1;
+}
+.extension-ui .brand {
+  font-size: 21px;
+}
+.extension-ui .language-switch select {
+  max-width: 110px;
+}
+:root[data-skin] .extension-ui .hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 14px 0;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+:root[data-skin] .extension-ui .hero h1 {
+  font-size: clamp(28px, 7vw, 38px);
+  line-height: 1.45;
+  margin: 10px 0;
+}
+.extension-ui .hero .intro {
+  font-size: 13px;
+}
+.extension-ui .mode-art {
+  min-height: 155px;
+  height: 165px;
+  transform-origin: center;
+}
+.extension-ui .box,
+.extension-ui .composer {
+  padding: 18px 16px;
+  margin-block: 16px;
+}
+.extension-ui .mode-controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+.extension-ui .mode-controls label {
+  margin-top: 8px;
+}
+.extension-ui .result-field {
+  grid-template-columns: 25px minmax(0, 1fr);
+  gap: 10px;
+  padding: 18px 12px;
+}
+.extension-ui .result-heading {
+  display: block;
+}
+.extension-ui .result-heading h2 {
+  font-size: 21px;
+}
+.extension-ui .skin-grid {
+  grid-template-columns: 1fr;
+}
+.extension-ui .archive-switch {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.extension-ui .archive-switch button {
+  font-size: 12px;
+  flex: 1;
+  padding: 9px 5px;
+}
+.extension-ui .archive-item {
+  padding: 20px 16px;
+}
+.extension-ui .archive-item h2 {
+  font-size: 21px;
+}
+.extension-ui footer {
+  margin-top: 30px;
+  font-size: 11px;
+}
+.extension-ui :is(input, textarea, select) {
+  max-width: 100%;
+}
+.extension-ui button {
+  overflow-wrap: anywhere;
+}
+.extension-ui .balance {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.extension-ui .focus-diagram {
+  transform: scale(0.85);
+}
+.extension-ui .paper-note {
+  max-width: 55%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .extension-ui * {
+    scroll-behavior: auto !important;
+    animation: none !important;
+  }
+}

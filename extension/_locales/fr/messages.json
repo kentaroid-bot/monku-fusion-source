@@ -1,0 +1,7 @@
+{
+  "description": {
+    "message": "Transformez les tensions en mots et en idées. Quatre modes de réponse, avec idées et solde partagés avec le site."
+  },
+  "actionTitle": { "message": "Ouvrir Monku Fusion" },
+  "contextMenu": { "message": "Créer avec Monku Fusion" }
+}

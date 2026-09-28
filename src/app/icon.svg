@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Monku Fusion favicon</title>
+  <desc id="desc">The monku.ai mo mark in three colors on a deep indigo background.</desc>
+  <rect width="512" height="512" rx="88" fill="#202440" />
+  <g fill="none" stroke-width="38" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M332 94C293 85 260 96 238 126C216 156 215 195 238 211C265 230 309 211 344 176C360 160 376 151 397 154"
+      stroke="#FF938C"
+    />
+    <path
+      d="M326 96C288 145 257 197 232 256C204 321 191 389 224 429C254 465 319 464 348 426C377 388 373 305 366 247C359 184 344 132 310 104"
+      stroke="#87E5C5"
+    />
+    <path d="M190 257C224 245 262 247 303 252" stroke="#FFDA80" />
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/cache
+
+# Next.js Build Output
+/.next/
+/out/
+
+# Production
+/build
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets (NEVER COMMIT)
+.env
+.env*.local
+*.env
+*.key
+*.pem
+*.md.key
+
+# OS files
+.DS_Store
+*.pem
+
+# Convex generated files (Convex re-generates these upon build)
+# Note: _generated is usually kept or excluded depending on workflow, but keeping it ensures CI builds work without extra step.
+
+# Vercel & Turbopack
+.vercel
+.turbo
+
+/DESK.md
+.env*
+!.env.example
+/dist/
+*.tsbuildinfo
+
+.wrangler/
+.dev.vars*
+/test-results/
+/playwright-report/
+__pycache__/
+
+next-env.d.ts

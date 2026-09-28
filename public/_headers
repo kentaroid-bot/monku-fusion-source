@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://clerk.fusion.monku.ai https://*.protect.clerk.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.convex.site https://generativelanguage.googleapis.com https://challenges.cloudflare.com https://clerk.fusion.monku.ai https://*.protect.clerk.com:*; frame-src https://challenges.cloudflare.com https://*.protect.clerk.com; img-src 'self' data: https://img.clerk.com; worker-src 'self' blob:; form-action 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
